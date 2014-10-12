@@ -63,7 +63,8 @@ class TagsController < ApplicationController
   end
 
   def get_by_url
-    tags = Tag.where url:params[:url]
+    print params[:url]
+    tags = Tag.where( :url => params[:url] )
     render json: tags
   end
 
