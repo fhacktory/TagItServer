@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
   resources :tags
 
-  get "/list_tags_by_url/:url" => "tags#get_by_url"
+  post "/list_tags_by_url" => "tags#get_by_url"
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
