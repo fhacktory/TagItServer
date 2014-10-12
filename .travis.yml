@@ -1,0 +1,14 @@
+language: ruby
+rvm:
+- 2.1.2
+- 2.0.0
+- 1.9.3
+- jruby-19mode
+- rbx-2
+deploy:
+  provider: heroku
+  api_key:
+    secure: ONIE14a3GhZp2WLvkXsC/vRBdF4i4M+e0tihMq03+5SekU/TA9CLqN8EX4PD7wrWAWvm8D0ics9zwX8lb7UW+74U/5wyCgOrklaw/C1B+AwdHu8+doeZUQ/Z+bj5c2PcdiLjqwhemzvLffF+KNctnosSNfa5yPOf/mifEZTtBQg=
+  app: tagitserver
+  on:
+    repo: fhacktory/TagItServer
