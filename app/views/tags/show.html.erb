@@ -1,5 +1,6 @@
 <p id="notice"><%= notice %></p>
-<p class="url"><%= @tag.url %></p>
+<p><%= @tag.url %></p>
 <%= @tag.content %>
+<br/>
 <%= link_to 'Edit', edit_tag_path(@tag) %> |
 <%= link_to 'Back', tags_path %>
